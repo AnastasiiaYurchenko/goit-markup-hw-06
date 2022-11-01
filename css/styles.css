@@ -662,7 +662,7 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   left: 50%;
   transform: translateX(-50%) translateY(-50%) scale(1);
   transition: transform 300ms linear;
-  padding: 20px;
+  padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
@@ -685,22 +685,30 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-title{
-  text-align: center;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
+  font-weight: 700;
+font-size: 20px;
+line-height: 1.15;
+text-align: center;
+color: var(--secondary-text-color);
 }
 
 .modal-label{
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 4px;
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
 }
 
 .modal-input{
   display: block;
   width: 100%;
-  height: 30px;
-border: 1px solid red;
-border-radius: 5px;
-padding: 5px 15px;
+  height: 40px;
+border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
+/* padding: 5px 15px; */
 outline: transparent;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -716,7 +724,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-field{
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .input-wrap{
@@ -725,7 +733,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-icon{
   position: absolute;
-  left: 10px;
+  left: 12px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -733,13 +741,21 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-textarea{
   width: 100%;
-  height: 100px;
-  padding: 15px;
-  border: 1px solid red;
-border-radius: 5px;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+border-radius: 4px;
 outline: transparent;
 resize: none;
 transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
+
+.modal-textarea::placeholder{
+  font-weight: 400;
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.01em;
+color: rgba(117, 117, 117, 0.5);
 }
 
 .modal-textarea:hover,
@@ -747,22 +763,100 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
   border-color: var(--accent-color);
 }
 
+.modal-field.comment{
+  margin-bottom: 20px;
+}
+.modal-label.agee{
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+margin: 0;
+}
+
 .agree-link{
   color: var(--accent-color);
-  text-decoration: underline;
+  text-decoration-line: underline;
   cursor: pointer;
 }
 
 .modal-field.agree{
   display: flex;
   align-items: baseline;
-  gap: 10px;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 30px;
 }
 
 .modal-button-send{
-  padding: 15px;
+  padding: 10px 52px;
   margin: 0 auto;
+  font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--white-text-color);
+background: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
 }
+
+.sign-in{
+margin-left: 93px;
+}
+
+.sign-text{
+  display: block;
+font-weight: 700;
+line-height: 1.14;
+text-transform: uppercase;
+color: var(--white-text-color);
+margin-bottom: 20px;
+}
+
+.input-sign-mail{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: transparent;
+width: 358px;
+height: 50px;
+padding: 15px 16px;
+margin-right: 15px;
+outline: transparent;
+}
+
+.input-sign-mail::placeholder{
+  font-weight: 400;
+font-size: 16px;
+line-height: 1.25;
+display: flex;
+align-items: center;
+color: rgba(255, 255, 255, 0.6);
+}
+
+.btn-sign{
+background: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border-radius: 4px;
+padding: 10px 28px;
+font-weight: 700;
+font-size: 16px;
+line-height: 1.88;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: var(--white-text-color);
+}
+
+.sign-form{
+  display: flex;
+}
+
+
 
 
 

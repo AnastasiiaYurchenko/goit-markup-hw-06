@@ -378,10 +378,11 @@
         </div>
         <div class="sign-in">
           <b class="sign-text">Підпишіться на розсилку</b>
-          <form>
+          <form class="sign-form">
             <div class="sign-field">
-              <input type="text" name="mail" class="sign-mail">
+              <input type="text" name="mail" class="input-sign-mail" placeholder="E-mail" />
             </div>
+            <button type="submit" class="btn-sign">Підписатися</button>
           </form>
         </div>
       </div>
@@ -400,7 +401,7 @@
             <div class="input-wrap">
               <input type="text" name="name" id="user-name" class="modal-input" />
               <svg class="modal-icon" width="18" height="18">
-                <use href="./images/icons.svg#icon-close-black"></use>
+                <use href="./images/icons.svg#icon-person-black"></use>
               </svg>
             </div>
           </div>
@@ -409,7 +410,7 @@
             <div class="input-wrap">
               <input type="tel" name="tel" id="user-tel" class="modal-input" />
               <svg class="modal-icon" width="18" height="18">
-                <use href=""></use>
+                <use href="./images/icons.svg#icon-phone-black"></use>
               </svg>
             </div>
           </div>
@@ -418,17 +419,17 @@
             <div class="input-wrap">
               <input type="email" name="email" id="user-mail" class="modal-input" />
               <svg class="modal-icon" width="18" height="18">
-                <use href=""></use>
+                <use href="./images/icons.svg#icon-email-black"></use>
               </svg>
             </div>
           </div>
-          <div class="modal-field">
+          <div class="modal-field comment">
             <label for="user-comment" class="modal-label">Коментар</label>
-            <textarea name="comment" id="user-comment" class="modal-textarea"  cols="30" rows="10" placeholder="Введіть текст"></textarea>
+            <textarea name="comment" id="user-comment" class="modal-textarea" placeholder="Введіть текст"></textarea>
           </div>
           <div class="modal-field agree">
-            <input type="checkbox" name="agreement" id="user-agreement" class="modal-checkbox">
-            <label for="user-agreement" class="modal-label agee">Погоджуюсь з розсилкою та приймаю <a class="agree-link link">Умови договору</a></label>
+            <input type="checkbox" name="agreement" id="user-agreement" class="modal-checkbox" />
+            <label for="user-agreement" class="modal-label agee">Погоджуюся з розсилкою та приймаю <a class="agree-link link">Умови договору</a></label>
           </div>
           <button type="submit" class="modal-button-send">Відправити</button>
         </form>
