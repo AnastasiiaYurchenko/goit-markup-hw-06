@@ -382,7 +382,8 @@
             <div class="sign-field">
               <input type="text" name="mail" class="input-sign-mail" placeholder="E-mail" />
             </div>
-            <button type="submit" class="btn-sign">Підписатися
+            <button type="submit" class="btn-sign">
+              Підписатися
               <svg class="sign-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -432,11 +433,13 @@
             <textarea name="comment" id="user-comment" class="modal-textarea" placeholder="Введіть текст"></textarea>
           </div>
           <div class="modal-field agree">
-            <input type="checkbox" name="agreement" id="user-agreement" class="modal-checkbox" />
-            <svg class="icon-checkbox" width="16" height="15">
-              <use href="./images/icons.svg#icon-check118"></use>
-            </svg>
-            <label for="user-agreement" class="modal-label agee">Погоджуюся з розсилкою та приймаю <a class="agree-link link">Умови договору</a></label>
+            <label class="modal-label agee">
+              <input type="checkbox" name="agreement" class="modal-checkbox visually-hidden" />
+              <svg class="icon-checkbox" id="user-agreement" width="16" height="15">
+                <use href="./images/icons.svg#icon-check118"></use>
+              </svg>
+              Погоджуюся з розсилкою та приймаю <a class="agree-link link">Умови договору</a>
+            </label>
           </div>
           <button type="submit" class="modal-button-send">Відправити</button>
         </form>

@@ -534,7 +534,7 @@ img {
 }
 
 .sign-in {
-  margin-left: 93px;
+  margin-left: auto;
 }
 
 .sign-text {
@@ -837,26 +837,15 @@ img {
   margin-bottom: 20px;
 }
 
-.modal-checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-}
-
 .icon-checkbox {
-  display: block;
   width: 16px;
   height: 15px;
   border-radius: 3px;
   border: 2px solid var(--secondary-text-color);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 7px;
 }
 
 .modal-checkbox:checked + .icon-checkbox {
@@ -869,8 +858,10 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
   margin: 0;
-  margin-left: 8px;
+  display: flex;
+  align-items: center;
 }
 
 .agree-link {
@@ -887,7 +878,7 @@ img {
   height: 1px;
   background-color: var(--accent-color);
   display: block;
-  bottom: 0;
+  bottom: 4px;
   right: 0;
 }
 
